@@ -1,3 +1,4 @@
+# PROGRAMMING CODE 
 import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
@@ -13,3 +14,7 @@ y_pred_sk = model.predict(X)
 print('Closed-form beta:', np.round(beta_hat,3))
 print('MSE (closed):', mean_squared_error(y, y_pred_closed))
 print('MSE (sklearn):', mean_squared_error(y, y_pred_sk))
+# OUTPUT
+Closed-form beta: [-164.796    4.649    8.019]
+MSE (closed): 14.990291262136022
+MSE (sklearn): 14.990291262135969
