@@ -1,3 +1,4 @@
+# PROGRAMMING CODE
 import numpy as np
 A = np.array([[2.0, 1.0], [1.0, 3.0]])
 b = np.array([1.0, 2.0])
@@ -8,3 +9,19 @@ eigvals, eigvecs = np.linalg.eig(A)
 print("\nEigenvalues:", np.round(eigvals,4))
 x = np.linalg.solve(A,b)
 print("\nSolve A x=b-->x", np.round(x,4))
+# OUTPUT 
+Matrix A:
+ [[2. 1.]
+ [1. 3.]]
+
+Transpose A^T:
+ [[2. 1.]
+ [1. 3.]]
+
+Inverse A^-1:
+ [[ 0.6 -0.2]
+ [-0.2  0.4]]
+
+Eigenvalues: [1.382 3.618]
+
+Solve A x=b-->x [0.2 0.6]
